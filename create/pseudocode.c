@@ -7,28 +7,37 @@
 
 //I assume this will be off center, so we don't place the cubes in front of botguy
 
+//the miniservos will be 0 and 1
+//I assume that their 0 position will be as FAR in as possible
+//the big servo will me 2, its 0 will be as far DOWN(i think) as possible
+
 //connect to create
-//rotate 90^o
+//rotate in place
+//wait for the proper amount of time to make it rotate 90 degrees
+//stop the wheels
 //make ms0 move in
 //make ms1 move in (in the other direction)
 //this grabs the cube
 //move the big servo up, thus picking the cubes off the floor
-//move wheel 0 forward
-//move wheel 1 forward at the same speed as the other so that it drive in a straight line
-//drive forward the correct amount so that the cubes are being held over the pieceof wood or whatever its called
-//lower the big servo so that the cubes are sitting on the piece of fucking wood or whatever THE F U C K ITS CALLED
-//make ms0 move out
-//make ms1 move out in the other direction
-//this drips the cubes
-//drive backward
+//drive forward until the arm is holding the cubes above the wood thing
+//wait the right amount of time to make it reach
+//stop the wheels
+//lower the big servo so that the cubes are sitting on the piece of wood
+//make miniservo(0) move out
+//make miniservo(1) move out 
+//drive backward so that when centering it doesn't knock things around
+//only wait for a fraction of a second, so that it only moves back a very little
 
 //WE NEED TO WORK ON THIS PART
 //somehow center the army thing in front of botguy
 //WE NEED TO WORK ON THIS PART
 
-//drive forward, so as to knock botguy off
-//drive back
-//rotate 90^o
-//drive all the way back
+//drive forward FAST, so as to knock botguy off
+//only a small amount though, so it doesn't shake the wood and so it is kind of jerky
+//quickly drive back
+//only a little
+//rotate in place
+//make it go 90 degrees
+//drive all the way ot the edge
 //drive worward, parrallell to the wood thing
 //use the other arm to scrape everything into the 'caldera'
