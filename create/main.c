@@ -18,7 +18,7 @@ int main() {
     msleep(2000); //wait the right amount of time to make it reach //placeholder
     //stop the wheels //NOTHING HERE RIGHT NOW//
     set_servo_position(2, 1000); //lower the big servo so that the cubes are sitting on the piece of wood //placeholder
-    set servo position(0, 1000); //make miniservo(0) move out //placeholder
+    set_servo_position(0, 1000); //make miniservo(0) move out //placeholder
     set_servo_position(1, 1000); //make miniservo(1) move out
     create_drive_direct(-200, -200); //drive backward so that when centering it does not knock things around
     msleep(350); //only wait for a fraction of a second so that it only moves a very little
