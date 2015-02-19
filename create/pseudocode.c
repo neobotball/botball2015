@@ -15,6 +15,7 @@
 //rotate in place
 //wait for the proper amount of time to make it rotate 90 degrees
 //stop the wheels
+//lower the big arm down so that the cubes are inside it.
 //make ms0 move in
 //make ms1 move in (in the other direction)
 //this grabs the cube
