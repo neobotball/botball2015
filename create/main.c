@@ -6,10 +6,11 @@
 //the miniservos will be 0 and 1
 //I assume that their 0 position will be as far IN as possible
 //the big servo will be 2, its 0 will be as far DOWN(i think) as possible
+void turn90();
+
 int main() {
     create_connect(); //connect to create
-    create_drive_direct(250, -250); //rotate in place //note this may rotate in the wrong direction
-    msleep(600); //wait for the proper amount of time to make it rotate in place
+    turn90();
     //stop the wheels //NOTHING HERE RIGHT NOW//
     set_servo_position(0, 100); //make miniservo(0) move in //the position may need to be more or less than 100, depending on how the miniservo is mounted.  that's up to the builders. at this point it's just kind of a placeholder
     set_servo_position(1, 100); //make miniservo(1) move in (in the other direction) //again, 100 as a placeholder
@@ -31,9 +32,14 @@ int main() {
     msleep(300); //only a small amount though, so it doesn't shake the wood and so it is kind of jerky //placeholder
     create_drive_direct(300, 300); //quickly drive back
     msleep(400); //only a little
-    create_drive_direct(-250, 250); //rotate in place //this may go the wrong direction
-    msleep(600); //make it go 90 degrees
+    turn90();
     //drive all the way to the edge
 //drive worward, parrallell to the wood thing
 //use the other arm to scrape everything into the 'caldera'
+    return 0;
+}
+
+void turn90() {
+    create_drive_direct(250, -250); //rotate in place //note this may rotate in the wrong direction
+    msleep(600); //wait for the proper amount of time to make it rotate in place
 }
